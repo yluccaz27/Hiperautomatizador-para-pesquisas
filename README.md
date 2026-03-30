@@ -1,0 +1,1 @@
+﻿# Hiperautomatizador para pesquisa gov
