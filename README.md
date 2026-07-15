@@ -25,7 +25,6 @@ playwright install
 python reboot_test.py
 
 ## exemplo de JSON
-Isso ajuda muito quem vai avaliar.
 
 
 {
