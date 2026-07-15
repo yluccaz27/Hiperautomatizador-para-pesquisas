@@ -1,19 +1,36 @@
-﻿# Hiperautomatizador para pesquisas
+﻿# Hiperautomatizador para Pesquisas
 
-Automação desenvolvida em Python para realizar pesquisas em portais web e gerar resultados automaticamente.
+Automação desenvolvida em Python utilizando Playwright para realizar consultas no Portal da Transparência, capturar informações do usuário e gerar um arquivo JSON contendo os dados obtidos e uma captura da tela em Base64.
 
 ## Tecnologias
 
-- Python
+- Python 3.13+
 - Playwright
-- Requests
+- Playwright Stealth
 
-## Instalação
+## Funcionalidades
+
+- Pesquisa por Nome, CPF ou NIS
+- Captura automática das informações
+- Screenshot da página
+- Conversão da imagem para Base64
+- Geração de arquivo JSON
+
+## Como executar
 
 pip install -r requirements.txt
 
-playwright install chrome
+playwright install
 
-## Execução
+python reboot_test.py
 
-python main.py
+## exemplo de JSON
+Isso ajuda muito quem vai avaliar.
+
+
+{
+  "nome": "João da Silva",
+  "cpf": "***.***.***-**",
+  "nis": "123456789",
+  "screenshot": "<base64>"
+}
